@@ -19,6 +19,3 @@ for (let element of works) {
 element.addEventListener('mouseover', rotate);
 element.addEventListener('mouseout', deRotate);
 }
-
-
-
