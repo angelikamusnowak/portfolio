@@ -185,7 +185,7 @@ header li a:hover {
   background-color: #e6f1fc;
 }
 
-.works section {
+.works>div {
   background-color: white;
   padding: 1.5rem;
   color: #0a41a8d0;
