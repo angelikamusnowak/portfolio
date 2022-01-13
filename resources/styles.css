@@ -243,6 +243,19 @@ header li a:hover {
   }
 }
 
+/*about me*/
+
+.about-me {
+  background-image: url(images/me.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vw;
+  margin: 1rem auto;
+}
 
 /*footer*/
 
