@@ -310,6 +310,10 @@ footer a:hover {
   color:black;
 }
 
+footer .right {
+  text-align: right;
+}
+
 @media only screen and (max-width: 1267px) {
   footer {
     font-size: 0.9rem;
@@ -341,13 +345,20 @@ footer a:hover {
       padding: 1rem 2rem;
       line-height: 1.2rem;
     }
+
     footer section {
       margin: 1rem 0;
     }
+
     footer h3 {
       font-size: 1.1rem;
     }
+
     footer a:hover {
-      color:rgb(143, 197, 226)
+      color:rgb(157, 211, 255)
+    }
+
+    footer .right {
+      text-align: left;
     }
   }
