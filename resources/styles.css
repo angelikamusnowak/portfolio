@@ -63,7 +63,7 @@ header h1 {
 
 header h1 a{
   transition: color 1s ease-in-out;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 
 header h1 a:hover{
@@ -167,10 +167,10 @@ header li a:hover {
 }
 @media only screen and (max-width: 630px) {
   .main h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
-  .main p{
-    font-size: 1.2rem;
+  .main a:hover {
+    transform: scale(1.1);
   }
 }
 
