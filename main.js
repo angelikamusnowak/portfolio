@@ -1,14 +1,14 @@
 let array = [];
 for (i=1; i<7; i++) {
-  array[i-1] = document.getElementById(`w${i}`);
+  array[i-1] = document.querySelector(`div #w${i}:not(.image)`);
 };
 
 let rotate = function(event) {
-  event.target.style.transform = 'rotate3d(1, 1, 1, 5deg)';
+  event.target.style.transform = 'rotate(5deg)';
 };
 
 let deRotate = function(event) {
-  event.target.style.transform = 'rotate3d(1, 1, 1, 0deg)';
+  event.target.style.transform = 'rotate(0deg)';
 };
 
 for (let element of array) {

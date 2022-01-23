@@ -62,7 +62,7 @@ header h1 {
 }
 
 header h1 a{
-  transition: color 1s ease-in-out;
+  transition: color 0.5s ease-in-out;
   color: rgba(255, 255, 255, 0.959);
 }
 
@@ -189,7 +189,7 @@ header li a:hover {
   background-color: white;
   padding: 1.5rem;
   color: #0a41a8d0;
-  transition: transform 1.5s;
+  transition: transform 1.8s 0.1s;
 }
 
 .works .image {
@@ -199,12 +199,11 @@ header li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: transform 1.8s;
 }
 
-.works p {
-  line-height: 1.3rem;
-  font-weight: 300;
-  text-align: justify;
+.works h2 {
+  transition: transform 1.8s;
 }
 
 .w1 .image {
