@@ -4,11 +4,11 @@ for (i=1; i<7; i++) {
 };
 
 let rotate = function(event) {
-  event.target.style.transform = 'rotate(5deg)';
+  event.target.style.transform = 'scale(1.05)';
 };
 
 let deRotate = function(event) {
-  event.target.style.transform = 'rotate(0deg)';
+  event.target.style.transform = 'scale(1)';
 };
 
 for (let element of array) {
