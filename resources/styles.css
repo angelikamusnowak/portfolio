@@ -217,12 +217,12 @@ header li a:hover {
   background-color: white;
   padding: 1.5rem;
   color: rgb(50, 76, 163);
-  transition: transform 1.8s 0.1s, color 1.8s 0.1s;;
+  transition: transform 1.2s ease-in-out, color 1.2s ease-in-out;
 }
 
 .works>div:hover, .works>a:hover {
   transform: scale(1.07);
-  color:  rgb(253, 93, 93);
+  color:  rgb(252, 69, 69);
 }
 
 .works .image {
@@ -263,6 +263,24 @@ header li a:hover {
   background-image: url(images/logo.png);
 }
 
+.w7 .image {
+  background-image: url(images/photography.JPG);
+}
+
+.w8 .image {
+  background-image: url(images/rendery.jpg);
+}
+
+.w9 .image {
+  background-image: url(images/motion.jpg);
+  background-position: bottom;
+  transition: background-image 1.2s ease-out;
+}
+
+.w9 .image:hover {
+  background-image: url(images/motion2.jpg);
+}
+
 @media only screen and (max-width: 800px) {
   .works {
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
@@ -287,7 +305,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(124, 69, 108);
+  color: rgb(252, 69, 69);
 }
 
 /*about me*/
