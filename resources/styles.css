@@ -10,7 +10,7 @@ body {
 h1 {
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
 }
 
 h2 {
@@ -45,9 +45,6 @@ span.nobr {
 
 header {
   display: flex;
-  background-color: rgba(36, 43, 97, 1);
-  background-image: linear-gradient(90deg, rgb(36, 43, 97) 0%, rgba(107, 77, 102, 1) 50%, rgba(99, 156, 187, 1) 100%);
-  color: rgba(255, 255, 255, 0.863);
   justify-content: space-between;
 }
 
@@ -55,19 +52,24 @@ header h1 {
   font-size: 2.8vw;
   flex-shrink: 4;
   padding-left: 2vw;
-  padding-bottom: 0.8rem;
-  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.8rem;
   margin: auto 0;
   text-align: left;
 }
 
 header h1 a{
-  transition: color 0.5s ease-in-out;
-  color: rgba(255, 255, 255, 0.959);
+  background-color: rgba(36, 43, 97, 1);
+  background-image: linear-gradient(90deg, rgba(36, 43, 97, 1) 0%, rgba(107, 77, 102, 1) 50%, rgba(99, 156, 187, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-color 0.2s ease-out;
 }
 
-header h1 a:hover{
-  color: rgba(219, 242, 255, 0.719);
+header h1 a:hover {
+  background-color:  rgb(253, 93, 93);
+  background-image: none;
 }
 
 header ul {
@@ -86,12 +88,15 @@ header li {
   font-size: 1.5vw;
   font-weight: 500;
   padding: 0 2vw;
-  color: black;
-  transition: color 1s ease-in-out;
+}
+
+header li a {
+  color: rgb(50, 76, 163);
+  transition: color 0.2s ease-out;
 }
 
 header li a:hover {
-  color: rgb(255, 244, 244);
+  color:  rgb(253, 93, 93);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -117,15 +122,25 @@ header li a:hover {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    header li {
-      font-size: 1rem;
+@media only screen and (max-width: 715px) {
+
+    header h1 a{
+      background-color: rgb(50, 76, 163);
+      background-image: none;
     }
     
-    header h1 {
-      font-size: 1.7rem;
-    }
 }
+
+@media only screen and (max-width: 600px) {
+  header li {
+    font-size: 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.7rem;
+  }
+}
+
 
 /*main*/
 
@@ -138,11 +153,11 @@ header li a:hover {
   flex-direction: column;
   justify-content: center;
   height: 50vw;
-  margin: 1rem auto;
+  margin: auto;
 }
 
 .main a {
-  border: 1px solid rgba(255, 255, 255, 0.952);
+  border: 1px solid rgb(255, 255, 255);
   background-color: #2187caaf;
   width: fit-content;
   margin: auto;
@@ -150,7 +165,7 @@ header li a:hover {
 }
 
 .main a:hover {
-  background-color: rgba(255, 255, 255, 0.801);
+  background-color: rgba(254, 101, 101, 0.507);;
   transform: scale(1.5);
 }
 
@@ -162,9 +177,22 @@ header li a:hover {
   padding: 1rem 2rem;
   letter-spacing: 0.15rem;
 }
-.main h1:hover {
-  color: #125cb1d5;
+
+@media only screen and (max-width: 1200px) {
+  .main h1 {
+    font-size: 1.5rem;
+  }
+  .main a:hover {
+    transform: scale(1.3);
+  }
 }
+
+@media only screen and (max-width: 733px) {
+  .main h1 {
+    font-size: 1.3rem;
+  }
+}
+
 @media only screen and (max-width: 630px) {
   .main h1 {
     font-size: 1.3rem;
@@ -188,8 +216,13 @@ header li a:hover {
 .works>div, .works>a{
   background-color: white;
   padding: 1.5rem;
-  color: #0a41a8d0;
-  transition: transform 1.8s 0.1s;
+  color: rgb(50, 76, 163);
+  transition: transform 1.8s 0.1s, color 1.8s 0.1s;;
+}
+
+.works>div:hover, .works>a:hover {
+  transform: scale(1.07);
+  color:  rgb(253, 93, 93);
 }
 
 .works .image {
@@ -275,6 +308,7 @@ nav a:hover {
   background-color: #e6f1fc9d;
   padding: 1rem 2vw;
   font-weight: 500;
+  line-height: 1.5rem;
 }
 
 @media only screen and (max-width: 650px) {
