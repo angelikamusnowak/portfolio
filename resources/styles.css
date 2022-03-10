@@ -123,12 +123,15 @@ header li a:hover {
 }
 
 @media only screen and (max-width: 715px) {
-
-    header h1 a{
-      background-color: rgb(50, 76, 163);
-      background-image: none;
+    header ul {
+      flex-direction:column;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 0.1rem;
     }
-    
+    header li {
+      margin: 0.15rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,6 +144,16 @@ header li a:hover {
   }
 }
 
+@media only screen and (max-width: 459px) {
+  header h1 a{
+    background-color: rgb(50, 76, 163);
+    background-image: none;
+  }
+  
+  header li {
+    white-space: nowrap;
+  }
+}
 
 /*main*/
 
