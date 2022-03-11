@@ -294,7 +294,7 @@ header li a:hover {
   background-image: url(images/motion2.jpg);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 863px) {
   .works {
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
   }
@@ -303,7 +303,7 @@ header li a:hover {
   }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 650px) {
   .works {
     grid-template: repeat(6, 1fr)/ 1fr;
     gap: 1.3rem;
@@ -354,6 +354,54 @@ nav a:hover {
     margin: 1rem auto 1rem;
     height: 25rem;
   }
+}
+
+/*web design*/
+
+.web-design {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e6f1fc;
+}
+
+.web-design>div, .web-design>a{
+  background-color: white;
+  padding: 1.5rem;
+  color: rgb(50, 76, 163);
+  transition: transform 1.2s ease-in-out, color 1.2s ease-in-out;
+}
+
+.web-design>div:hover, .web-design>a:hover {
+  transform: scale(1.05);
+  color:  rgb(252, 69, 69);
+}
+
+.web-design .image {
+  height: 15rem;
+  width: auto;
+  margin-bottom: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1.8s;
+}
+
+.web-design h2 {
+  transition: transform 1.8s;
+}
+
+.web1 .image {
+  background-image: url(images/diametros_preview.png);
+  background-position: top;
+}
+
+.web2 .image {
+  background-image: url(images/pastel.JPG);
+}
+
+.web3 .image {
+  background-image: url(images/drawings.jpg);
 }
 
 /*footer*/
