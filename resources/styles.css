@@ -25,6 +25,11 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
 span.nobr { 
   white-space: nowrap; 
 }
@@ -361,14 +366,13 @@ nav a:hover {
 .web-design {
   display: grid;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 7vw;
   background-color: #e6f1fc;
 }
 
 .web-design>div, .web-design>a{
   background-color: white;
   padding: 1.5rem;
-  color: rgb(50, 76, 163);
   transition: transform 1.2s ease-in-out, color 1.2s ease-in-out;
 }
 
@@ -378,11 +382,11 @@ nav a:hover {
 }
 
 .web-design .image {
-  height: 15rem;
+  height: 27rem;
   width: auto;
   margin-bottom: 1rem;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   transition: transform 1.8s;
 }
@@ -393,15 +397,65 @@ nav a:hover {
 
 .web1 .image {
   background-image: url(images/diametros_preview.png);
-  background-position: top;
 }
 
 .web2 .image {
-  background-image: url(images/pastel.JPG);
+  background-image: url(images/fwp_preview.png);
 }
 
 .web3 .image {
   background-image: url(images/drawings.jpg);
+}
+
+@media only screen and (max-width: 715px) {
+  .web-design {
+    gap: 1.5rem;
+    padding: 1.7rem 5vw;
+  }
+  .web-design .image{
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .web-design .image{
+    height: 50vw;
+  }
+}
+
+/*diametros*/
+.diametros {
+  color:rgb(50, 76, 163);
+  padding: 1rem;
+}
+
+.diametros .views {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.diametros h4 {
+  text-align: left;
+}
+
+.browser {
+  overflow-y: scroll;
+  height: 40rem;
+  border: thin solid #DADADA;
+  width: 1200px;
+  margin: auto;
+}
+
+.browser .image{
+  width: 100%;
+  height: 0;
+  padding-top: 215.75%;
+  background-image: url('images/diametros_browser.png');
+  background-attachment: scroll;
+  background-position: top;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 /*footer*/
