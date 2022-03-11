@@ -298,11 +298,18 @@ header li a:hover {
   .works {
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
   }
+  .w1 {
+    grid-column: span 2;
+  }
 }
 
 @media only screen and (max-width: 630px) {
   .works {
     grid-template: repeat(6, 1fr)/ 1fr;
+    gap: 1.3rem;
+  }
+  .w1 {
+    grid-column: span 1;
   }
 }
 
@@ -345,14 +352,13 @@ nav a:hover {
 @media only screen and (max-width: 650px) {
   .about-me {
     margin: 1rem auto 1rem;
+    height: 25rem;
   }
 }
 
 /*footer*/
 
 footer {
-  display: flex;
-  justify-content: space-between;
   background-color: rgba(36, 43, 97, 1);
   background-image: linear-gradient(90deg, rgba(36, 43, 97, 1) 0%, rgba(107, 77, 102, 1) 50%, rgba(99, 156, 187, 1) 100%);
   color:white;
@@ -362,19 +368,28 @@ footer {
   font-size: 1vw;
 }
 
-footer h3 {
+footer>p {
+  color:rgb(215, 237, 255)
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h3 {
   font-size: 1.2vw;
 }
 
-footer a {
+.footer a {
   color: white;
 }
 
-footer a:hover {
+.footer a:hover {
   color:black;
 }
 
-footer .right {
+.footer .right {
   text-align: right;
 }
 
@@ -385,7 +400,7 @@ footer .right {
     padding: 2vw 2vw;
   }
 
-  footer h3 {
+  .footer h3 {
     font-size: 1.1rem;
   }
 }
@@ -397,32 +412,35 @@ footer .right {
       padding: 2vw 2vw;
     }
   
-    footer h3 {
+    .footer h3 {
       font-size: 2.2vw;
     }
   }
 
 @media only screen and (max-width: 650px) {
     footer {
-      flex-direction: column;
       font-size: 0.8rem;
       padding: 1rem 2rem;
       line-height: 1.2rem;
     }
 
-    footer section {
+    .footer {
+      flex-direction: column;
+    }
+
+    .footer section {
       margin: 1rem 0;
     }
 
-    footer h3 {
+    .footer h3 {
       font-size: 1.1rem;
     }
 
-    footer a:hover {
+    .footer a:hover {
       color:rgb(157, 211, 255)
     }
 
-    footer .right {
+    .footer .right {
       text-align: left;
     }
   }
