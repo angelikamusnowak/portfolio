@@ -318,6 +318,16 @@ header li a:hover {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .works {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  .works>div, .works>a {
+    padding: 1.3rem;
+  }
+}
+
 /*nav*/
 
 nav {
@@ -371,6 +381,7 @@ nav a:hover {
 }
 
 .web-design>div, .web-design>a{
+  color:rgb(50, 76, 163);
   background-color: white;
   padding: 1.5rem;
   transition: transform 1.2s ease-in-out, color 1.2s ease-in-out;
@@ -384,7 +395,7 @@ nav a:hover {
 .web-design .image {
   height: 27rem;
   width: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -414,6 +425,26 @@ nav a:hover {
   }
   .web-design .image{
     height: 40vw;
+  }
+  .web-design h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .web-design {
+    gap: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .web-design {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  .works>div, .works>a {
+    padding: 1.3rem;
   }
 }
 
