@@ -370,7 +370,7 @@ nav a:hover {
   }
 }
 
-/*web design*/
+/*web designs*/
 
 .web-design {
   display: grid;
@@ -453,7 +453,22 @@ nav a:hover {
   }
 }
 
-/*diametros*/
+/* web page */
+
+/* fonts */
+
+.web h2 {
+  margin-bottom: 2rem;
+}
+
+.web h4 {
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #2186ca;
+}
+
+/* global web */
+
 .web {
   color:rgb(50, 76, 163);
   padding: 1rem;
@@ -465,6 +480,24 @@ nav a:hover {
   flex-wrap: nowrap;
   justify-content: center;
 }
+
+.web .flex .column {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* desktop */
+
+#desktop {
+  flex-basis: 1200px;
+}
+
+.desktop {
+  flex-basis: 50vw;
+}
+
+/* mobile */
 
 #parent {
   flex-basis: 1200px;
@@ -480,20 +513,13 @@ nav a:hover {
   padding: 0;
 }
 
-.web h2 {
-  margin-bottom: 2rem;
-}
-
 .scroll {
   overflow-y: scroll;
   border: thin solid #DADADA;
   display: flex;
 }
 
-.browser {
-  height: 40rem;
-  width: 1200px;
-}
+/* tablet */
 
 #child .t {
   flex-basis: 786px;
@@ -501,21 +527,31 @@ nav a:hover {
   justify-content: flex-end;
 }
 
-#child .m {
+#t {
+  flex-basis: 786px;
+}
+
+.tablet {
+  flex-basis: 40rem;
+}
+
+/* smartphone */
+
+#child .s {
   flex-basis: 400px;
   margin-left: 0.5vw;
   justify-content: flex-start;
 }
 
-.tablet {
-  height: 40rem;
-  flex-basis: 786px;
-}
-
-.mobile {
-  height: 40rem;
+#s {
   flex-basis: 400px;
 }
+
+.smartphone {
+  flex-basis: 40rem;
+}
+
+/* image */
 
 .web .image{
   width: 100%;
@@ -526,7 +562,7 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 
-.diametros .browser .image {
+.diametros .desktop .image {
   background-image: url('images/diametros_browser.png');
   padding-top: 215.75%;
 }
@@ -536,10 +572,12 @@ nav a:hover {
   padding-top: 215.0%;
 }
 
-.diametros .mobile .image {
+.diametros .smartphone .image {
   background-image: url('images/diametros_mobile.png');
   padding-top: 1259.5%;
 }
+
+/* media queries */
 
 @media only screen and (max-width: 1088px) {
 
@@ -547,16 +585,20 @@ nav a:hover {
     padding: 0.5rem;
   }
 
-  .tablet, .mobile {
-    height: 30rem;
+  .tablet, .smartphone {
+    flex-basis: 30rem;
   }
 
-  .browser {
-    height: 55vw;
+  .desktop {
+    flex-basis: 55vw;
   }
 }
 
 @media only screen and (max-width: 836px) {
+
+  .web h4 {
+    margin-bottom: 0.5rem;
+  }
 
   .web .flex {
     padding: 0.5rem;
@@ -567,26 +609,26 @@ nav a:hover {
     justify-content: center;
   }
 
-  #child .t,   #child .m {
+  #child .t,   #child .s {
     margin-right: 0vw;
   }
 
-  .web .two-child>.m {
+  .web .two-child>.s {
     padding: 1rem 0;
   }
 
   .tablet {
-    height: 55vw;
+    flex-basis: 55vw;
   }
 
-  .mobile {
-    height: 40rem;
+  .smartphone {
+    flex-basis: 40rem;
   }
 }
 
 @media only screen and (max-width: 390px) {
-  .mobile {
-    height: 35rem;
+  .smartphone {
+    flex-basis: 35rem;
   }
 }
 
