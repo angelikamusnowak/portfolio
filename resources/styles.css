@@ -224,8 +224,7 @@ header li a:hover {
 
 .works {
   display: grid;
-  grid-template-areas: "A B C"
-                      "D E F";
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
   background-color: #e6f1fc;
@@ -460,33 +459,90 @@ nav a:hover {
   padding: 1rem;
 }
 
-.diametros .views {
-  margin: 1rem;
+.diametros .flex {
+  margin: 0 1rem;
   padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#parent {
+  flex-basis: 1200px;
+}
+
+#child {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-basis: 1200px;
+}
+
+.diametros .two-child>.flex {
+  margin: 0;
+  padding: 0;
+}
+
+.diametros h2 {
+  margin-bottom: 2rem;
+}
+
+.scroll {
+  overflow-y: scroll;
+  border: thin solid #DADADA;
   display: flex;
 }
 
-.diametros h4 {
-  text-align: left;
-}
-
 .browser {
-  overflow-y: scroll;
   height: 40rem;
-  border: thin solid #DADADA;
   width: 1200px;
-  margin: auto;
 }
 
-.browser .image{
+.diametros .t {
+  flex-basis: 786px;
+  margin-right: 7px !important;
+  justify-content: flex-end;
+}
+
+.diametros .m {
+  flex-basis: 400px;
+  margin-left: 7px !important;
+  justify-content: flex-start;
+}
+
+.tablet {
+  height: 40rem;
+  flex-basis: 786px;
+}
+
+.mobile {
+  height: 40rem;
+  flex-basis: 400px;
+}
+
+.web .image{
   width: 100%;
   height: 0;
-  padding-top: 215.75%;
-  background-image: url('images/diametros_browser.png');
   background-attachment: scroll;
   background-position: top;
   background-size:contain;
   background-repeat: no-repeat;
+}
+
+.diametros .browser .image {
+  background-image: url('images/diametros_browser.png');
+  padding-top: 215.75%;
+}
+
+.diametros .tablet .image {
+  background-image: url('images/diametros_tablet.png');
+  padding-top: 215.0%;
+}
+
+.diametros .mobile .image {
+  background-image: url('images/diametros_mobile.png');
+  padding-top: 1259.5%;
 }
 
 /*footer*/
