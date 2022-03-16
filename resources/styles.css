@@ -424,7 +424,7 @@ nav a:hover {
 }
 
 .web3 .image {
-  background-image: url(images/drawings.jpg);
+  background-image: url(images/portfolio_preview.jpg);
 }
 
 /* media queries */
@@ -506,7 +506,7 @@ nav a:hover {
 }
 
 .desktop {
-  flex-basis: 50vw;
+  flex-basis: 40vw;
 }
 
 /* mobile */
@@ -612,7 +612,33 @@ nav a:hover {
   padding-top: 1259.5%;
 }
 
+/* portfolio */
+
+.portfolio .desktop .image {
+  background-image: url('images/web_portfolio_desktop.jpg');
+  padding-top: 166.58%;
+}
+
+.portfolio .tablet .image {
+  background-image: url('images/web_portfolio_tablet.jpg');
+  padding-top: 312.72%;
+}
+
+.portfolio .smartphone .image {
+  background-image: url('images/web_portfolio_smartphone.jpg');
+  padding-top: 977.5%;
+}
+
 /* media queries */
+
+@media only screen and (max-width: 1430px) {
+
+  .desktop {
+    flex-basis: 50vw;
+  }
+
+}
+
 @media only screen and (max-width: 1195px) {
 
   .tablet, .smartphone {
