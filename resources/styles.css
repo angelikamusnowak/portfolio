@@ -590,9 +590,17 @@ nav a:hover {
   cursor: pointer;
 }
 
+.portfolio a>button {
+  height: 3rem;
+  margin: 0.2rem 0 0.7rem 0;
+  width: 18rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+}
+
 .web a>button:hover {
   background-color: rgb(255, 45, 45);
-  border:rgb(253, 93, 93) 2px solid;
+  border:rgb(253, 93, 93) 1px solid;
 }
 
 /* diametros */
@@ -703,7 +711,7 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-  .web a>button {
+  .web a>button, .portfolio a>button {
     margin: 0 0 1rem 0;
   }
 }
@@ -716,6 +724,14 @@ nav a:hover {
     font-size: 1.1rem;
     font-weight: 500;
   }
+
+  .portfolio a>button {
+    height: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    width: 18rem;
+    font-size: 1rem;
+  }
+
 }
 
 @media only screen and (max-width: 390px) {
