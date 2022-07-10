@@ -415,6 +415,10 @@ nav a:hover {
   transition: transform 1.8s;
 }
 
+.web0 .image {
+  background-image: url(images/cgip_preview.png);
+}
+
 .web1 .image {
   background-image: url(images/diametros_preview.png);
 }
@@ -590,7 +594,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.portfolio a>button {
+.portfolio a>button, .cgip a>button {
   height: 3rem;
   margin: 0.2rem 0 0.7rem 0;
   width: 18rem;
@@ -601,6 +605,23 @@ nav a:hover {
 .web a>button:hover {
   background-color: rgb(255, 45, 45);
   border:rgb(253, 93, 93) 1px solid;
+}
+
+/* cgip */
+
+.cgip .mainpage .image {
+  background-image: url('images/CGiP_main_page.png');
+  padding-top: 204.06%;
+}
+
+.cgip .categorypage .image {
+  background-image: url('images/CGiP_Kategoria.png');
+  padding-top: 183.44%;
+}
+
+.cgip .productpage .image  {
+  background-image: url('images/CGiP_product.png');
+  padding-top: 136.93%;
 }
 
 /* diametros */
@@ -711,7 +732,7 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-  .web a>button, .portfolio a>button {
+  .web a>button, .portfolio a>button, .cgip a>button {
     margin: 0 0 1rem 0;
   }
 }
@@ -725,7 +746,7 @@ nav a:hover {
     font-weight: 500;
   }
 
-  .portfolio a>button {
+  .portfolio a>button, .cgip a>button {
     height: 2.5rem;
     margin: 0 0 0.5rem 0;
     width: 18rem;
